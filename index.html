@@ -8,35 +8,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-    :root {
-        --primary: #1a2a5e;
-        --secondary: #6a9f3f;
-    }
+    :root { --primary: #1a2a5e; --secondary: #6a9f3f; }
     * { scroll-behavior: smooth; }
     body { font-family: 'Poppins', sans-serif; color: #0f172a; }
     h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
-   .hero-gradient { background: linear-gradient(135deg, #1a2a5e 0%, #2d3f7a 50%, #6a9f3f 100%); }
-   .glass-effect { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
-   .btn-primary { background: linear-gradient(135deg, #1a2a5e, #2d3f7a); transition: all 0.3s ease; }
-   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26, 42, 94, 0.3); }
-   .btn-secondary { background: linear-gradient(135deg, #6a9f3f, #7fb649); transition: all 0.3s ease; }
-   .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(106, 159, 63, 0.3); }
-   .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-   .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(26, 42, 94, 0.15); }
-   .nav-scrolled { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
-   .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
-   .reveal.active { opacity: 1; transform: translateY(0); }
-   .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 24px; right: 24px; background: #25d366; color: white; border-radius: 50px; font-size: 30px; box-shadow: 2px 2px 20px rgba(37, 211, 102, 0.5); z-index: 1000; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
-   .whatsapp-float:hover { transform: scale(1.1); }
+  .hero-gradient { background: linear-gradient(135deg, #1a2a5e 0%, #2d3f7a 50%, #6a9f3f 100%); }
+  .glass-effect { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
+  .btn-primary { background: linear-gradient(135deg, #1a2a5e, #2d3f7a); transition: all 0.3s ease; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(26, 42, 94, 0.3); }
+  .btn-secondary { background: linear-gradient(135deg, #6a9f3f, #7fb649); transition: all 0.3s ease; }
+  .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(106, 159, 63, 0.3); }
+  .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(26, 42, 94, 0.15); }
+  .nav-scrolled { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+  .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .reveal.active { opacity: 1; transform: translateY(0); }
+  .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 24px; right: 24px; background: #25d366; color: white; border-radius: 50px; font-size: 30px; box-shadow: 2px 2px 20px rgba(37, 211, 102, 0.5); z-index: 1000; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+  .whatsapp-float:hover { transform: scale(1.1); }
 </style>
 </head>
 <body class="bg-slate-50">
-    <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                    <img src="logo.jpg" alt="MF Transporte" class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-lg">
+                    <img src="/mnt/data/image_e58f31.jpeg" alt="MF Transporte" class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-lg">
                     <div>
                         <h1 class="text-white font-bold text-xl nav-logo-text">MF Transporte</h1>
                         <p class="text-white/80 text-xs nav-logo-text">Marco Fernández Chinchilla</p>
@@ -68,7 +64,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section id="inicio" class="hero-gradient min-h-screen flex items-center pt-24 pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -85,7 +80,7 @@
                     </div>
                 </div>
                 <div class="glass-effect rounded-3xl p-8 shadow-2xl text-center">
-                    <img src="logo.jpg" alt="MF Transporte" class="w-full h-auto rounded-2xl mx-auto mb-6 max-w-sm">
+                    <img src="/mnt/data/image_e58f31.jpeg" alt="MF Transporte" class="w-full h-auto rounded-2xl mx-auto mb-6 max-w-sm">
                     <h3 class="text-2xl font-bold mb-2 text-white">Marco Fernández Chinchilla</h3>
                     <p class="text-white/90">Más de 15 años de experiencia</p>
                 </div>
@@ -93,7 +88,6 @@
         </div>
     </section>
 
-    <!-- Servicios -->
     <section id="servicios" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -116,7 +110,6 @@
         </div>
     </section>
 
-    <!-- Flotilla -->
     <section id="flotilla" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -142,7 +135,6 @@
         </div>
     </section>
 
-    <!-- Reservas -->
     <section id="reservas" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal">
@@ -174,7 +166,6 @@
         </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-[#1a2a5e]">Contacto</h2>
